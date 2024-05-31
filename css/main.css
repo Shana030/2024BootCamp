@@ -63,6 +63,7 @@ body {
 }
 
 .header {
+    position: relative;
     border-bottom: 1px solid #929292;
     padding: 32px 312px;
     align-items: center;
@@ -70,17 +71,14 @@ body {
 }
 
 .logo {
-    width: 90px;
-    height: 40px;
-    padding: 7px 7px 7.74px 7px;
     position: absolute;
-    left: 312px;
-    top: 28px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo img {
-    width: 76px;
-    height: 25.26px;
+    vertical-align: middle;
 }
 
 .menu {
@@ -102,10 +100,6 @@ body {
     display: flex;
 }
 
-.flex-row {
-    flex-direction: row;
-}
-
 .flex-column {
     flex-direction: column;
 }
@@ -118,13 +112,12 @@ body {
     justify-content: space-between;
 }
 
-h1 {
+/* h1 {
     font-size: 36px;
-}
+} */
 
 h3 {
     font-size: 28px;
-    /* line-height: 2; */
     font-weight: 700;
     color: #3B3B3B;
 }
@@ -142,7 +135,6 @@ p {
     padding-top: 120px;
     padding-bottom: 120px;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 80px 24px;
 }
 
